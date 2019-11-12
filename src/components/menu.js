@@ -18,12 +18,12 @@ const StyledUl = styled.ul`
 
 const StyledLink = styled(Link)`
   color: black;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 100;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-decoration: none;
-  font-size: 25px;
+
   color: #818181;
 `;
 

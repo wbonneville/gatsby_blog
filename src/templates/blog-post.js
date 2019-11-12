@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import Menu from '../components/menu';
 
 export default function Template({ data }) {
   const post = data.markdownRemark;
@@ -20,6 +21,7 @@ export default function Template({ data }) {
   return (
     <Div>
       <div>
+        <Menu />
         <Link to="/blog">Go Back</Link>
         <hr />
         <h1>{post.frontmatter.title}</h1>
