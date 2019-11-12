@@ -23,9 +23,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div>
-      <div>
-        <Menu />
-      </div>
       <Div>
         <p>
           Hello, my name is Wesley. <br></br>

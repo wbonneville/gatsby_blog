@@ -23,6 +23,7 @@ const Layout = ({ children }) => {
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
 
       <StyledDiv>
+        <Menu />
         <main>{children}</main>
         {/* <footer>
           © {new Date().getFullYear()}, Built with

@@ -22,9 +22,6 @@ const ProjectsPage = () => (
     <Layout>
       <Div>
         <div>
-          <Menu />
-        </div>
-        <div>
           <p>Here's a bunch of projects</p>
         </div>
       </Div>

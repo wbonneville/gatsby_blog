@@ -21,9 +21,6 @@ export default function Template({ data }) {
   return (
     <Div>
       <div>
-        <Menu />
-      </div>
-      <div>
         <Link to="/blog">Go Back</Link>
         <hr />
         <h1>{post.frontmatter.title}</h1>

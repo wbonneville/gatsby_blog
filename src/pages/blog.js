@@ -20,9 +20,6 @@ const BlogPage = ({ data }) => (
   <Layout>
     <Div>
       <div>
-        <Menu />
-      </div>
-      <div>
         {data.allMarkdownRemark.edges.map(post => (
           <div key={post.node.id}>
             <h3>{post.node.frontmatter.title}</h3>
