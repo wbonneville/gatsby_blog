@@ -19,7 +19,7 @@ const Div = styled.div`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Div className="row ">
+    <Div className="row">
       <MenuDiv className="col-xs-2">
         <Menu />
       </MenuDiv>
