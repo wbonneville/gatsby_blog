@@ -9,13 +9,19 @@ import styled from 'styled-components';
 
 const Div = styled.div`
   position: fixed;
-  top: 150px;
-  left: 300px;
+  top: 152px;
+  left: 350px;
   width: 50%;
-  padding-right: 10%;
+  margin-right: 10%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   & p {
     text-align: left;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 200;
+  }
+  & span {
+    color: #366bd3;
   }
 `;
 
@@ -25,7 +31,7 @@ const IndexPage = () => (
     <div>
       <Div>
         <p>
-          Hello, my name is Wesley. <br></br>
+          Hello, I'm <span>Wesley Bonneville</span> <br></br>
           <br />
           dolor sit amet consectetur adipisicing elit. Vel esse natus, sapiente
           debitis perferendis nam porro deleniti. Nisi molestiae sapiente, ipsa
