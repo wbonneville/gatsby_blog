@@ -9,7 +9,10 @@ import styled from 'styled-components';
 import { MenuDiv } from '../components/menu';
 
 const Div = styled.div`
-  padding: 10%;
+  position: fixed;
+  top: 150px;
+  left: 250px;
+  width: 50%;
   & p {
     text-align: left;
     font-size: 18px;
@@ -19,11 +22,11 @@ const Div = styled.div`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Div className="row">
-      <MenuDiv className="col-xs-2">
+    <div>
+      <MenuDiv>
         <Menu />
       </MenuDiv>
-      <div className="col-xs-6">
+      <Div>
         <p>
           Hello, my name is Wesley. <br></br>
           <br />
@@ -33,8 +36,8 @@ const IndexPage = () => (
           perspiciatis ipsam autem totam animi at quod consequuntur eaque
           similique.
         </p>
-      </div>
-    </Div>
+      </Div>
+    </div>
   </Layout>
 );
 
