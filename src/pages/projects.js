@@ -1,23 +1,30 @@
-import React from "react"
-import Header from "../components/header"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from 'react';
+import styled from 'styled-components';
+import Header from '../components/header';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Menu from '../components/menu';
+const Div = styled.div`
+  padding: 10%;
+  & p {
+    text-align: left;
+    font-size: 18px;
+  }
+`;
 
 const ProjectsPage = () => (
   <React.Fragment>
     <Layout>
-      <div>
-        <h1>Projects</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          modi at quasi, fugit quidem maxime ipsam labore recusandae expedita
-          deserunt ipsum officiis, facere ab corporis rerum, perferendis
-          voluptas dolorem similique nesciunt ad ullam. Quae officia aliquam
-          nobis cum aspernatur maxime.
-        </p>
-      </div>
+      <Div className="row ">
+        <div className="col-xs-2">
+          <Menu />
+        </div>
+        <div className="col-xs-6">
+          <h1>Here's a bunch of projects</h1>
+        </div>
+      </Div>
     </Layout>
   </React.Fragment>
-)
+);
 
-export default ProjectsPage
+export default ProjectsPage;

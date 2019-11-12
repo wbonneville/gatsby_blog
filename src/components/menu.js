@@ -2,17 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-const StyledDiv = styled.div`
-  background: #5eb47f;
-  padding-top: 10px;
-`;
+const StyledDiv = styled.div``;
 
 const StyledUl = styled.ul`
   list-style: none;
 `;
 
 const StyledLink = styled(Link)`
-  color: white;
+  color: black;
   font-size: 16px;
   font-weight: 800;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
