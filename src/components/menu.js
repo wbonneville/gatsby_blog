@@ -42,7 +42,7 @@ const StyledUl = styled.ul`
 
 const StyledLink = styled(Link)`
   color: black;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 180;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -55,7 +55,7 @@ const StyledLink = styled(Link)`
     background-size: 1px 1px;
     color: #000;
     text-decoration: none;
-    transition: background-size 0.1s;
+    transition: background-size 0.2s;
   }
 
   & span:hover {
