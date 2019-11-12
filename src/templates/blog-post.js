@@ -8,7 +8,11 @@ export default function Template({ data }) {
   const post = data.markdownRemark;
 
   const Div = styled.div`
-    padding: 10%;
+    position: fixed;
+    top: 150px;
+    left: 300px;
+    width: 50%;
+    padding-right: 10%;
     & p {
       text-align: left;
       font-size: 18px;

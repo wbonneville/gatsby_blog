@@ -35,13 +35,13 @@ const Menu = () => (
       <div>
         <StyledUl>
           <li>
-            <StyledLink to="/">Home</StyledLink>
+            <StyledLink to="/">wesley</StyledLink>
           </li>
           <li>
-            <StyledLink to="/projects">Projects</StyledLink>
+            <StyledLink to="/projects">projects</StyledLink>
           </li>
           <li>
-            <StyledLink to="/blog">Blog</StyledLink>
+            <StyledLink to="/blog">blog</StyledLink>
           </li>
         </StyledUl>
       </div>
