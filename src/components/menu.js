@@ -10,27 +10,51 @@ const StyledDiv = styled.div`
   top: 150px; /* Stay at the top */
   left: 50px; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
+  z-index: 5;
+
+  & .nav {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #e3e3e3;
+    opacity: 0.6;
+    z-index: -1;
+    position: fixed;
+    top: 100px;
+    left: 200px;
+  }
+  & .nav2 {
+    width: 5rem;
+    height: 5rem;
+    background: #e3e3e3;
+    opacity: 0.8;
+    z-index: -1;
+    position: fixed;
+    top: 120px;
+    left: 120px;
+  }
 `;
 
 const StyledUl = styled.ul`
   list-style: none;
 `;
 
+// box-shadow: 0 8px 6px -6px black;
+
 const StyledLink = styled(Link)`
   color: black;
   font-size: 28px;
-  font-weight: 100;
+  font-weight: 180;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-decoration: none;
-
-  color: #818181;
 `;
 
 const Menu = () => (
   <React.Fragment>
     <StyledDiv>
       <div>
+        <div className="nav"></div>
+        <div className="nav2"></div>
         <StyledUl>
           <li>
             <StyledLink to="/">wesley</StyledLink>
