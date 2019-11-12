@@ -4,7 +4,6 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Menu from '../components/menu';
-import { MenuDiv } from '../components/menu';
 
 const Div = styled.div`
   position: fixed;
@@ -21,11 +20,11 @@ const Div = styled.div`
 const ProjectsPage = () => (
   <React.Fragment>
     <Layout>
-      <Div className="row ">
-        <MenuDiv className="col-xs-2">
+      <Div>
+        <div>
           <Menu />
-        </MenuDiv>
-        <div className="col-xs-6">
+        </div>
+        <div>
           <p>Here's a bunch of projects</p>
         </div>
       </Div>

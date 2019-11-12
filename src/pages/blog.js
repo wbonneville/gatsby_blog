@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Menu from '../components/menu';
 import styled from 'styled-components';
-import { MenuDiv } from '../components/menu';
 
 const Div = styled.div`
   position: fixed;
@@ -19,11 +18,11 @@ const Div = styled.div`
 
 const BlogPage = ({ data }) => (
   <Layout>
-    <Div className="row">
-      <MenuDiv className="col-xs-2">
+    <Div>
+      <div>
         <Menu />
-      </MenuDiv>
-      <div className="col-xs-6">
+      </div>
+      <div>
         {data.allMarkdownRemark.edges.map(post => (
           <div key={post.node.id}>
             <h3>{post.node.frontmatter.title}</h3>

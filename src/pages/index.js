@@ -6,7 +6,6 @@ import Image from '../components/image';
 import SEO from '../components/seo';
 import Menu from '../components/menu';
 import styled from 'styled-components';
-import { MenuDiv } from '../components/menu';
 
 const Div = styled.div`
   position: fixed;
@@ -24,9 +23,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div>
-      <MenuDiv>
+      <div>
         <Menu />
-      </MenuDiv>
+      </div>
       <Div>
         <p>
           Hello, my name is Wesley. <br></br>

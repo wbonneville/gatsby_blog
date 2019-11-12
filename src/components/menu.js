@@ -27,8 +27,6 @@ const StyledLink = styled(Link)`
   color: #818181;
 `;
 
-export const MenuDiv = styled.div``;
-
 const Menu = () => (
   <React.Fragment>
     <StyledDiv>
