@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Menu from '../components/menu';
 import styled from 'styled-components';
 
 export default function Template({ data }) {
