@@ -21,8 +21,8 @@ const StyledLink = styled(Link)`
 
 const Menu = () => (
   <React.Fragment>
-    <StyledDiv className="row">
-      <div className="col-xs-6">
+    <StyledDiv>
+      <div>
         <StyledUl>
           <li>
             <StyledLink to="/">Home</StyledLink>
