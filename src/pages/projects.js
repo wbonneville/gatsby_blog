@@ -3,11 +3,11 @@ import Header from "../components/header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AboutPage = () => (
+const ProjectsPage = () => (
   <React.Fragment>
     <Layout>
       <div>
-        <h1>About us</h1>
+        <h1>Projects</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
           modi at quasi, fugit quidem maxime ipsam labore recusandae expedita
@@ -20,4 +20,4 @@ const AboutPage = () => (
   </React.Fragment>
 )
 
-export default AboutPage
+export default ProjectsPage

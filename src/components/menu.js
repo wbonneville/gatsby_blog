@@ -1,37 +1,42 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const StyledDiv = styled.div`
-  background: #f4f4f4;
+  background: #5eb47f;
   padding-top: 10px;
-`
+`;
 
 const StyledUl = styled.ul`
   list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-`
+`;
+
+const StyledLink = styled(Link)`
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+`;
 
 const Menu = () => (
   <React.Fragment>
-    <StyledDiv>
-      <StyledUl>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/services">Services</Link>
-        </li>
-        <li>
-          <Link to="/blog">Blog</Link>
-        </li>
-      </StyledUl>
+    <StyledDiv className="row">
+      <div className="col-xs-6">
+        <StyledUl>
+          <li>
+            <StyledLink to="/">Home</StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/projects">Projects</StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/blog">Blog</StyledLink>
+          </li>
+        </StyledUl>
+      </div>
     </StyledDiv>
   </React.Fragment>
-)
+);
 
-export default Menu
+export default Menu;
