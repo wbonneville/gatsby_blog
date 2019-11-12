@@ -22,7 +22,7 @@ const ProjectsPage = () => (
           <Menu />
         </MenuDiv>
         <div className="col-xs-6">
-          <h1>Here's a bunch of projects</h1>
+          <p>Here's a bunch of projects</p>
         </div>
       </Div>
     </Layout>
