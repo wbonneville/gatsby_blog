@@ -9,9 +9,13 @@ const Div = styled.div`
   left: 300px;
   width: 50%;
   padding-right: 10%;
+  & h3 {
+    text-decoration: underline;
+  }
   & p {
+    margin-top: -3%;
     text-align: left;
-    font-size: 18px;
+    font-size: 12px;
   }
 `;
 
@@ -21,16 +25,17 @@ const BlogPage = ({ data }) => (
       <div>
         {data.allMarkdownRemark.edges.map(post => (
           <div key={post.node.id}>
-            <h3>{post.node.frontmatter.title}</h3>
-            <small>
+            <h3>
+              {' '}
+              <Link to={post.node.frontmatter.path}>
+                {' '}
+                {post.node.frontmatter.title}{' '}
+              </Link>
+            </h3>
+            <p>
               Posted by {post.node.frontmatter.author} on{' '}
               {post.node.frontmatter.date}
-            </small>
-            <br />
-            <br />
-            <Link to={post.node.frontmatter.path}> Read More </Link>
-            <br />
-            <br />
+            </p>
             <hr />
           </div>
         ))}
