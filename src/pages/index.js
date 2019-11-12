@@ -11,8 +11,9 @@ import { MenuDiv } from '../components/menu';
 const Div = styled.div`
   position: fixed;
   top: 150px;
-  left: 250px;
+  left: 300px;
   width: 50%;
+  padding-right: 10%;
   & p {
     text-align: left;
     font-size: 18px;
