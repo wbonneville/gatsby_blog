@@ -16,11 +16,11 @@ const StyledDiv = styled.div`
     width: 2.5rem;
     height: 2.5rem;
     background: #e3e3e3;
-    opacity: 0.6;
+    opacity: 0.4;
     z-index: -1;
     position: fixed;
     top: 100px;
-    left: 200px;
+    left: 188px;
   }
   & .nav2 {
     width: 5rem;
@@ -47,6 +47,20 @@ const StyledLink = styled(Link)`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-decoration: none;
+
+  & span {
+    background: linear-gradient(to bottom, #bdd5e4 0%, #bdd5e4 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size 0.1s;
+  }
+
+  & span:hover {
+    background-size: 4px 50px;
+  }
 `;
 
 const Menu = () => (
@@ -57,13 +71,19 @@ const Menu = () => (
         <div className="nav2"></div>
         <StyledUl>
           <li>
-            <StyledLink to="/">wesley</StyledLink>
+            <StyledLink to="/">
+              <span>wesley</span>
+            </StyledLink>
           </li>
           <li>
-            <StyledLink to="/projects">projects</StyledLink>
+            <StyledLink to="/projects">
+              <span>projects</span>
+            </StyledLink>
           </li>
           <li>
-            <StyledLink to="/blog">blog</StyledLink>
+            <StyledLink to="/blog">
+              <span>blog</span>
+            </StyledLink>
           </li>
         </StyledUl>
       </div>
