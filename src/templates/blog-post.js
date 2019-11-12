@@ -2,26 +2,33 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Menu from '../components/menu';
+import '../mystyles.scss';
 
 export default function Template({ data }) {
   const post = data.markdownRemark;
-
   const Div = styled.div`
-    position: fixed;
-    top: 150px;
-    left: 300px;
+    position: relative;
+    top: 170px;
+    left: 10%;
     width: 50%;
-    padding-right: 10%;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     & p {
       text-align: left;
-      font-size: 18px;
+      font-size: 24px;
+      font-weight: 200;
+    }
+    & span {
+      color: #366bd3;
     }
   `;
-
   return (
-    <Div>
-      <div>
+    <Div className="columns is-desktop">
+      <div className="column is-5">
         <Menu />
+      </div>
+      <div className="column is-12">
         <Link to="/blog">Go Back</Link>
         <hr />
         <h1>{post.frontmatter.title}</h1>

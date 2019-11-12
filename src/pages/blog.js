@@ -2,27 +2,38 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import styled from 'styled-components';
+import '../mystyles.scss';
+import Menu from '../components/menu';
 
 const Div = styled.div`
-  position: fixed;
-  top: 150px;
-  left: 300px;
+  position: relative;
+  top: 170px;
+  left: 10%;
   width: 50%;
-  padding-right: 10%;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   & h3 {
     text-decoration: underline;
   }
   & p {
-    margin-top: -3%;
+    margin-top: -1rem;
     text-align: left;
     font-size: 12px;
+    font-weight: 200;
+  }
+  & span {
+    color: #366bd3;
   }
 `;
 
 const BlogPage = ({ data }) => (
   <Layout>
-    <Div>
-      <div>
+    <Div className="columns is-desktop">
+      <div className="column is-5">
+        <Menu />
+      </div>
+      <div className="column is-12">
         {data.allMarkdownRemark.edges.map(post => (
           <div key={post.node.id}>
             <h3>
@@ -36,7 +47,6 @@ const BlogPage = ({ data }) => (
               Posted by {post.node.frontmatter.author} on{' '}
               {post.node.frontmatter.date}
             </p>
-            <hr />
           </div>
         ))}
       </div>
