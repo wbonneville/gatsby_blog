@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Menu from '../components/menu';
 import styled from 'styled-components';
+import { MenuDiv } from '../components/menu';
 
 const Div = styled.div`
   padding: 10%;
@@ -15,9 +16,9 @@ const Div = styled.div`
 const BlogPage = ({ data }) => (
   <Layout>
     <Div className="row">
-      <div className="col-xs-2">
+      <MenuDiv className="col-xs-2">
         <Menu />
-      </div>
+      </MenuDiv>
       <div className="col-xs-6">
         {data.allMarkdownRemark.edges.map(post => (
           <div key={post.node.id}>

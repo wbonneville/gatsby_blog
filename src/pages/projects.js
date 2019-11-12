@@ -4,6 +4,8 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Menu from '../components/menu';
+import { MenuDiv } from '../components/menu';
+
 const Div = styled.div`
   padding: 10%;
   & p {
@@ -16,9 +18,9 @@ const ProjectsPage = () => (
   <React.Fragment>
     <Layout>
       <Div className="row ">
-        <div className="col-xs-2">
+        <MenuDiv className="col-xs-2">
           <Menu />
-        </div>
+        </MenuDiv>
         <div className="col-xs-6">
           <h1>Here's a bunch of projects</h1>
         </div>

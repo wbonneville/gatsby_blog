@@ -6,6 +6,7 @@ import Image from '../components/image';
 import SEO from '../components/seo';
 import Menu from '../components/menu';
 import styled from 'styled-components';
+import { MenuDiv } from '../components/menu';
 
 const Div = styled.div`
   padding: 10%;
@@ -19,9 +20,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Div className="row ">
-      <div className="col-xs-2">
+      <MenuDiv className="col-xs-2">
         <Menu />
-      </div>
+      </MenuDiv>
       <div className="col-xs-6">
         <p>
           Hello, my name is Wesley. <br></br>
