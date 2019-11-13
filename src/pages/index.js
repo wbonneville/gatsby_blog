@@ -30,7 +30,7 @@ const Test = styled.div``;
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Wesley's " />
 
     <div>
       <Div className="columns is-tablet">
