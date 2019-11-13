@@ -7,9 +7,9 @@ import Menu from '../components/menu';
 
 const Div = styled.div`
   position: relative;
-  top: 170px;
-  left: 10%;
-  width: 50%;
+  top: 150px;
+  left: 6%;
+  width: 60%;
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
