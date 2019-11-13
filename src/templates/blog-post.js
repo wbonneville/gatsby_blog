@@ -19,6 +19,9 @@ export default function Template({ data }) {
       font-size: 24px;
       font-weight: 200;
     }
+    & h1 {
+      font-size: 30px;
+    }
   `;
   return (
     <Div className="columns is-desktop">
