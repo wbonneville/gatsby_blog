@@ -21,7 +21,7 @@ const Div = styled.div`
     font-size: 24px;
     font-weight: 200;
   }
-  & span {
+  & .name {
     color: #366bd3;
   }
 `;
@@ -39,7 +39,7 @@ const IndexPage = () => (
         </Test>
         <div className="column is-12">
           <p>
-            Hello, I'm <span>Wesley Bonneville</span> <br></br>
+            Hello, I'm <span className="name">Wesley Bonneville</span> <br></br>
             <br />
             dolor sit amet consectetur adipisicing elit. Vel esse natus,
             sapiente debitis perferendis nam porro deleniti. Nisi molestiae

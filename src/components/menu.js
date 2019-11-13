@@ -27,7 +27,7 @@ const StyledUl = styled.ul`
 `;
 
 const StyledLink = styled(Link)`
-  color: black;
+  color: black !important;
   font-size: 26px;
   font-weight: 300;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -39,7 +39,6 @@ const StyledLink = styled(Link)`
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 1px 1px;
-    color: #000;
     text-decoration: none;
     transition: background-size 0.2s;
   }
