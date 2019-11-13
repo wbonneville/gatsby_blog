@@ -19,9 +19,6 @@ export default function Template({ data }) {
       font-size: 24px;
       font-weight: 200;
     }
-    & span {
-      color: #366bd3;
-    }
   `;
   return (
     <Div className="columns is-desktop">

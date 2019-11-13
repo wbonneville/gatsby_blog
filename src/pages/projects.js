@@ -19,9 +19,6 @@ const Div = styled.div`
     font-size: 24px;
     font-weight: 200;
   }
-  & span {
-    color: #366bd3;
-  }
 `;
 
 const ProjectsPage = () => (

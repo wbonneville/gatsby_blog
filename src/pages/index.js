@@ -33,7 +33,7 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <div>
-      <Div className="columns is-desktop">
+      <Div className="columns is-tablet">
         <Test className="column is-5">
           <Menu />
         </Test>
