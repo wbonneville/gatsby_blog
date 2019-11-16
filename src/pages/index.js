@@ -28,29 +28,32 @@ const Div = styled.div`
 
 const Test = styled.div``;
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Wesley's Blog " />
+const IndexPage = () => {
+  return (
+    <Layout>
+      <SEO title="Wesley's Blog " />
 
-    <div>
-      <Div className="columns is-tablet">
-        <Test className="column is-5">
-          <Menu />
-        </Test>
-        <div className="column is-12">
-          <p>
-            Hello, I'm <span className="name">Wesley Bonneville</span> <br></br>
-            <br />
-            dolor sit amet consectetur adipisicing elit. Vel esse natus,
-            sapiente debitis perferendis nam porro deleniti. Nisi molestiae
-            sapiente, ipsa amet magnam voluptatibus quia placeat quas illum
-            velit porro perspiciatis ipsam autem totam animi at quod
-            consequuntur eaque similique.
-          </p>
-        </div>
-      </Div>
-    </div>
-  </Layout>
-);
+      <div>
+        <Div className="columns is-tablet">
+          <Test className="column is-5">
+            <Menu />
+          </Test>
+          <div className="column is-12">
+            <p>
+              Hello, I'm <span className="name">Wesley Bonneville</span>{' '}
+              <br></br>
+              <br />
+              dolor sit amet consectetur adipisicing elit. Vel esse natus,
+              sapiente debitis perferendis nam porro deleniti. Nisi molestiae
+              sapiente, ipsa amet magnam voluptatibus quia placeat quas illum
+              velit porro perspiciatis ipsam autem totam animi at quod
+              consequuntur eaque similique.
+            </p>
+          </div>
+        </Div>
+      </div>
+    </Layout>
+  );
+};
 
 export default IndexPage;
