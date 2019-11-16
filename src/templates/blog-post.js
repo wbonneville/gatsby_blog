@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Menu from '../components/menu';
-import Img from 'gatsby-image';
+
 import '../mystyles.scss';
 
 export default function Template({ data }) {
   const post = data.markdownRemark;
-  let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid;
+  // let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid;
 
   const Div = styled.div`
     position: relative;
@@ -38,12 +38,24 @@ export default function Template({ data }) {
         <h4>
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
         </h4>
-        <Img fluid={featuredImgFluid} />
+
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </div>
     </Div>
   );
 }
+
+{
+  /* <Img fluid={featuredImgFluid} /> */
+}
+
+// featuredImage {
+//   childImageSharp {
+//     fluid(maxWidth: 800) {
+//       ...GatsbyImageSharpFluid
+//     }
+//   }
+// }
 
 export const postQuery = graphql`
   query BlogPostByPath($path: String!) {
@@ -54,13 +66,6 @@ export const postQuery = graphql`
         title
         author
         date
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
