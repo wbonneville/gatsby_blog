@@ -3,10 +3,9 @@ path: '/post-one'
 date: '2019-11-7'
 title: 'What does it mean to learn something?'
 author: 'Wesley'
-featuredImage: train.png
 ---
 
-![test img](./train.png)
+![test img](/images/train.png)
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
 laborum nulla non possimus magnam. Perspiciatis quis eveniet
