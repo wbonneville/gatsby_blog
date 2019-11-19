@@ -6,25 +6,12 @@ module.exports = {
   },
 
   plugins: [
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-mdx`,
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 400,
-            },
-          },
-        ],
-      },
-    },
+    `gatsby-plugin-sharp`,
+
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -32,10 +19,25 @@ module.exports = {
         name: 'pages',
       },
     },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1080,
+            },
+          },
+        ],
+      },
+    },
+
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        plugins: [`gatsby-remark-copy-linked-files`],
         name: `images`,
         path: `${__dirname}/src/images`,
       },

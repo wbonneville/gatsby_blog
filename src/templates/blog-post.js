@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Menu from '../components/menu';
+import Image from 'gatsby-image';
 
 import '../mystyles.scss';
 
