@@ -3,6 +3,7 @@ path: '/post-one'
 date: '2019-11-7'
 title: 'What does it mean to learn something?'
 author: 'Wesley'
+featuredImage: ./train.png
 ---
 
 ![test img](./train.png)
