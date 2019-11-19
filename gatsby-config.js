@@ -41,6 +41,7 @@ module.exports = {
       },
     },
 
+    // `gatsby-transformer-remark` -- this overrides previous config
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
