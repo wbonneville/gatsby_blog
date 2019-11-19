@@ -5,7 +5,7 @@ title: 'What does it mean to learn something?'
 author: 'Wesley'
 ---
 
-![test img](/images/train.png)
+![test img](../../images/train.png)
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
 laborum nulla non possimus magnam. Perspiciatis quis eveniet
