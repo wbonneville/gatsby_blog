@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Menu from '../components/menu';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 
 import '../mystyles.scss';
 
@@ -47,14 +47,6 @@ export default function Template({ data }) {
     </Div>
   );
 }
-
-// featuredImage {
-//   childImageSharp {
-//     fluid(maxWidth: 800) {
-//       ...GatsbyImageSharpFluid
-//     }
-//   }
-// }
 
 export const postQuery = graphql`
   query BlogPostByPath($path: String!) {

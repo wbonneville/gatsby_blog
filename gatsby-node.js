@@ -5,12 +5,6 @@ const path = require('path');
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  const { fmImagesToRelative } = require('gatsby-remark-relative-images');
-
-  exports.onCreateNode = ({ node }) => {
-    fmImagesToRelative(node);
-  };
-
   const postTemplate = path.resolve('src/templates/blog-post.js');
 
   return graphql(`
