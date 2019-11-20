@@ -19,7 +19,7 @@ export default function Template({ data }) {
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     & p {
       text-align: left;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 200;
     }
     & h1 {
