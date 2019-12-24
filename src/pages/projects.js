@@ -36,7 +36,7 @@ const ProjectsPage = () => (
           <Menu />
         </div>
         <div className="column is-12">
-          <p>Here's some projects.</p>
+          <p>Here are a few of my projects.</p>
           <a href="https://spacewalkerproject.netlify.com/">
             a WIP space trading game built with React and Redux
           </a>
