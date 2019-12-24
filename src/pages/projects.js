@@ -19,6 +19,13 @@ const Div = styled.div`
     font-size: 24px;
     font-weight: 200;
   }
+  & span {
+    text-decoration: underline;
+  }
+`;
+
+const Anchor = styled.a`
+  text-decoration: underline;
 `;
 
 const ProjectsPage = () => (
@@ -29,7 +36,15 @@ const ProjectsPage = () => (
           <Menu />
         </div>
         <div className="column is-12">
-          <p>Here's a bunch of projects</p>
+          <p>Here's a bunch of projects.</p>
+          <a href="https://github.com/wbonneville/spacewalker">
+            <span>link to repo:</span> a space trading game built with React and
+            Redux
+          </a>
+          <br />
+          <Anchor href="https://spacewalkerproject.netlify.com/">
+            link to site
+          </Anchor>
         </div>
       </Div>
     </Layout>
