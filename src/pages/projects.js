@@ -16,8 +16,8 @@ const Div = styled.div`
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   & p {
     text-align: left;
-    font-size: 24px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 300;
   }
   & span {
     text-decoration: underline;
@@ -36,7 +36,7 @@ const ProjectsPage = () => (
           <Menu />
         </div>
         <div className="column is-12">
-          <p>Here's a bunch of projects.</p>
+          <p>Here's some projects.</p>
           <a href="https://spacewalkerproject.netlify.com/">
             a WIP space trading game built with React and Redux
           </a>
