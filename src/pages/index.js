@@ -16,6 +16,7 @@ const Div = styled.div`
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   & p {
     text-align: left;
     font-size: 24px;
@@ -23,6 +24,12 @@ const Div = styled.div`
   }
   & .name {
     color: #366bd3;
+  }
+`;
+
+const Body = styled.div`
+  & h1 {
+    color: #444444;
   }
 `;
 
@@ -38,10 +45,12 @@ const IndexPage = () => {
           <Test className="column is-5">
             <Menu />
           </Test>
-          <div className="column is-12">
+          <Body className="column is-12">
+            <h1>
+              Hello, I'm <span className="name">Wesley Bonneville.</span> I'm a
+              front-end developer. <br></br>
+            </h1>
             <p>
-              Hello, I'm <span className="name">Wesley Bonneville</span>{' '}
-              <br></br>
               <br />
               dolor sit amet consectetur adipisicing elit. Vel esse natus,
               sapiente debitis perferendis nam porro deleniti. Nisi molestiae
@@ -49,7 +58,7 @@ const IndexPage = () => {
               velit porro perspiciatis ipsam autem totam animi at quod
               consequuntur eaque similique.
             </p>
-          </div>
+          </Body>
         </Div>
       </div>
     </Layout>
