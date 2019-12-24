@@ -19,8 +19,8 @@ const Div = styled.div`
 
   & p {
     text-align: left;
-    font-size: 24px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 300;
   }
   & .name {
     color: #366bd3;
@@ -30,10 +30,13 @@ const Div = styled.div`
 const Body = styled.div`
   & h1 {
     color: #444444;
+    font-size: 34px;
   }
 `;
 
 const Test = styled.div``;
+
+const name = '{user.amazing.name}';
 
 const IndexPage = () => {
   return (
@@ -52,11 +55,19 @@ const IndexPage = () => {
             </h1>
             <p>
               <br />
-              dolor sit amet consectetur adipisicing elit. Vel esse natus,
-              sapiente debitis perferendis nam porro deleniti. Nisi molestiae
-              sapiente, ipsa amet magnam voluptatibus quia placeat quas illum
-              velit porro perspiciatis ipsam autem totam animi at quod
-              consequuntur eaque similique.
+              Welcome to my website, {name}! I created this site to function as
+              a homebase. Here, you can find my blog, resume, and links to my
+              GitHub and Twitter.
+              <br></br>
+              <br></br>I enjoy programming, and I consider myself to be an
+              architect. I'm also a team-player: in order to build something
+              that will stand out, individuals have to work in tandem.
+              Cathedrals and castles don't rise of their own accord. I value
+              friend-ships and agreeable sociability; I enjoy talking to others
+              and communicating clearly and transparently to ensure a project's
+              construction is stream-lined and pleasant.
+              <br /> <br /> Inclined to asking questions. Invested in my journey
+              of learning. Not a fan of shortcuts or easy-fix methods.
             </p>
           </Body>
         </Div>
