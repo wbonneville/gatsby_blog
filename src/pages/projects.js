@@ -38,7 +38,8 @@ const ProjectsPage = () => (
         <div className="column is-12">
           <p>Here are a few of my projects.</p>
           <a href="https://spacewalkerproject.netlify.com/">
-            a WIP space trading game built with React and Redux
+            a WIP space trading game built with React and Redux. click on a
+            planet!
           </a>
           <br />
           <Anchor href="https://github.com/wbonneville/spacewalker">
