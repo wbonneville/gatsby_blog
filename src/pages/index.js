@@ -55,9 +55,9 @@ const IndexPage = () => {
             </h1>
             <p>
               <br />
-              Welcome to my website, {name}! I created this site to function as
-              a homebase. Here, you can find my blog, resume, and links to my
-              GitHub and Twitter.
+              Merry Christmas! Welcome to my website, {name}! I created this
+              site to function as a homebase. Here, you can find my blog,
+              resume, and links to my GitHub and Twitter.
               <br></br>
               <br></br>I enjoy programming, and I consider myself to be an
               architect. I'm also a team-player: in order to build something
