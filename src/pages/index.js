@@ -36,8 +36,6 @@ const Body = styled.div`
 
 const Test = styled.div``;
 
-const name = '{user.amazing.name}';
-
 const IndexPage = () => {
   return (
     <Layout>
@@ -55,17 +53,23 @@ const IndexPage = () => {
             </h1>
             <p>
               <br />
-              Merry Christmas! Welcome to my website, {name}! I created this
-              site to function as a homebase. Here, you can find my blog,
-              resume, and links to my GitHub and Twitter.
+              Welcome to my website! I created this site to function as a
+              homebase. Here, you can find my blog, resume, and links to my
+              GitHub and Twitter.
               <br></br>
-              <br></br>I enjoy programming, and I consider myself to be an
-              architect. I'm also a team-player: in order to build something
-              that will stand out, individuals have to work in tandem.
-              Cathedrals and castles don't rise of their own accord. I value
-              friend-ships and agreeable sociability; I enjoy talking to others
-              and communicating clearly and transparently to ensure a project's
-              construction is stream-lined and pleasant.
+              <br></br>I'm 21. I'm based in Providence RI, on the East Coast. I
+              am a devotee of JavaScript + React. I enjoy programming and
+              designing. I'm interested in various subjects and things --
+              mathematics, history, photography, calisthenics, Studio Ghibli,
+              Brunelleschi, bildungsromans...
+              <br />
+              <br />
+              I consider myself to be an architect and a team-player: in order
+              to build something that will stand out, individuals have to work
+              in tandem. Cathedrals and castles don't rise of their own accord
+              -- individuals join forces and work together. I believe in
+              communicating clearly and transparently to ensure that a project's
+              construction is stream-lined, time-efficient, and pleasant.
               <br /> <br /> Inclined to asking questions. Invested in my journey
               of learning. Not a fan of shortcuts or easy-fix methods.
             </p>

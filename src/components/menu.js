@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import monkey from '../images/monkeh.png';
 
 const StyledDiv = styled.div`
   & .nav {
@@ -13,10 +14,17 @@ const StyledDiv = styled.div`
   & .nav2 {
     width: 5rem;
     height: 5rem;
-    background: #e3e3e3;
+
     opacity: 0.8;
     z-index: -1;
     margin-bottom: 1rem;
+  }
+  & .pic {
+    background-image: url(${monkey});
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    margin-bottom: 10px;
   }
 `;
 
@@ -52,8 +60,9 @@ const Menu = () => (
   <React.Fragment>
     <StyledDiv>
       <div>
-        <div className="nav"></div>
-        <div className="nav2"></div>
+        {/* <div className="nav"></div>
+        <div className="nav2"></div> */}
+        <div className="pic"></div>
         <StyledUl>
           <li>
             <StyledLink to="/">
