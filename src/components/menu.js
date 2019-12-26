@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import monkey from '../images/monkeh.png';
-import { FaGithubAlt } from 'react-icons/fa';
+import alberti from '../images/alberti.png';
+import {
+  FaGithubAlt,
+  FaTwitter,
+  Fa500Px,
+  FaStackOverflow,
+} from 'react-icons/fa';
 
 const StyledDiv = styled.div`
   & .nav {
@@ -21,11 +26,12 @@ const StyledDiv = styled.div`
     margin-bottom: 1rem;
   }
   & .pic {
-    background-image: url(${monkey});
-    height: 100px;
+    background-image: url(${alberti});
+    height: 150px;
     width: 100px;
     background-size: cover;
-    margin-bottom: 10px;
+    border-radius: 3%;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -35,7 +41,7 @@ const StyledUl = styled.ul`
   margin: 0;
 
   & .icons {
-    margin-left: 8%;
+    padding-top: 3px;
   }
 `;
 
@@ -87,6 +93,21 @@ const Menu = () => (
           <li className="icons">
             <a href="https://github.com/wbonneville">
               <FaGithubAlt />
+            </a>
+          </li>
+          <li className="icons">
+            <a href="https://twitter.com/wesbonneville">
+              <FaTwitter />
+            </a>
+          </li>
+          <li className="icons">
+            <a href="https://500px.com/wesbonneville">
+              <Fa500Px />
+            </a>
+          </li>
+          <li className="icons">
+            <a href="https://stackoverflow.com/users/10571874/wesley-bonneville">
+              <FaStackOverflow />
             </a>
           </li>
         </StyledUl>
