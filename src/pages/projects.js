@@ -19,9 +19,6 @@ const Div = styled.div`
     font-size: 20px;
     font-weight: 300;
   }
-  & span {
-    text-decoration: underline;
-  }
 `;
 
 const Anchor = styled.a`

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import monkey from '../images/monkeh.png';
+import { FaGithubAlt } from 'react-icons/fa';
 
 const StyledDiv = styled.div`
   & .nav {
@@ -32,6 +33,10 @@ const StyledUl = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
+
+  & .icons {
+    margin-left: 8%;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -78,6 +83,11 @@ const Menu = () => (
             <StyledLink to="/blog">
               <span>blog</span>
             </StyledLink>
+          </li>
+          <li className="icons">
+            <a href="https://github.com/wbonneville">
+              <FaGithubAlt />
+            </a>
           </li>
         </StyledUl>
       </div>
