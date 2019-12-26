@@ -43,6 +43,10 @@ const StyledUl = styled.ul`
   & .icons {
     padding-top: 3px;
   }
+
+  & .icon {
+    margin-right: 5px;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -91,22 +95,25 @@ const Menu = () => (
             </StyledLink>
           </li>
           <li className="icons">
-            <a href="https://github.com/wbonneville">
+            <a className="icon" href="https://github.com/wbonneville">
               <FaGithubAlt />
             </a>
           </li>
           <li className="icons">
-            <a href="https://twitter.com/wesbonneville">
+            <a className="icon" href="https://twitter.com/wesbonneville">
               <FaTwitter />
             </a>
           </li>
           <li className="icons">
-            <a href="https://500px.com/wesbonneville">
+            <a className="icon" href="https://500px.com/wesbonneville">
               <Fa500Px />
             </a>
           </li>
           <li className="icons">
-            <a href="https://stackoverflow.com/users/10571874/wesley-bonneville">
+            <a
+              className="icon"
+              href="https://stackoverflow.com/users/10571874/wesley-bonneville"
+            >
               <FaStackOverflow />
             </a>
           </li>
