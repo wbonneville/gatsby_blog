@@ -33,19 +33,33 @@ const StyledDiv = styled.div`
     border-radius: 3%;
     margin-bottom: 1rem;
   }
+
+  .circle [class*='icon'] {
+    width: 25px;
+    height: 25px;
+    color: whitesmoke;
+    background-color: #444444;
+    border-radius: 25px;
+    line-height: 25px;
+    margin: auto 3px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .icon:hover {
+    background-color: #3b5a9b;
+  }
 `;
 
 const StyledUl = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-
-  & .icons {
-    padding-top: 3px;
+  margin-bottom: 1.2rem;
+  & .socials {
+    padding-top: 1px;
   }
 
   & .icon {
-    margin-right: 5px;
   }
 `;
 
@@ -94,30 +108,35 @@ const Menu = () => (
               <span>blog</span>
             </StyledLink>
           </li>
-          <li className="icons">
-            <a className="icon" href="https://github.com/wbonneville">
-              <FaGithubAlt />
-            </a>
-          </li>
-          <li className="icons">
-            <a className="icon" href="https://twitter.com/wesbonneville">
-              <FaTwitter />
-            </a>
-          </li>
-          <li className="icons">
-            <a className="icon" href="https://500px.com/wesbonneville">
-              <Fa500Px />
-            </a>
-          </li>
-          <li className="icons">
-            <a
-              className="icon"
-              href="https://stackoverflow.com/users/10571874/wesley-bonneville"
-            >
-              <FaStackOverflow />
-            </a>
-          </li>
         </StyledUl>
+
+        <div className="circle">
+          <StyledUl>
+            <li className="socials">
+              <a className="icon" href="https://github.com/wbonneville">
+                <FaGithubAlt />
+              </a>
+            </li>
+            <li className="socials">
+              <a className="icon" href="https://twitter.com/wesbonneville">
+                <FaTwitter />
+              </a>
+            </li>
+            <li className="socials">
+              <a className="icon" href="https://500px.com/wesbonneville">
+                <Fa500Px />
+              </a>
+            </li>
+            <li className="socials">
+              <a
+                className="icon"
+                href="https://stackoverflow.com/users/10571874/wesley-bonneville"
+              >
+                <FaStackOverflow />
+              </a>
+            </li>
+          </StyledUl>
+        </div>
       </div>
     </StyledDiv>
   </React.Fragment>

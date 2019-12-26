@@ -25,6 +25,9 @@ const Div = styled.div`
   & .name {
     color: #366bd3;
   }
+  & .important {
+    font-weight: 500;
+  }
 `;
 
 const Body = styled.div`
@@ -57,11 +60,14 @@ const IndexPage = () => {
               homebase. Here, you can find my blog, resume, and links to my
               GitHub and Twitter.
               <br></br>
-              <br></br>I'm 21. I'm based in Providence RI, on the East Coast. I
-              am a devotee of JavaScript + React. I enjoy programming and
-              designing. I'm interested in various subjects and things --
-              mathematics, history, photography, calisthenics, Studio Ghibli,
-              Brunelleschi, bildungsromans...
+              <br></br>
+              <span className="important">
+                I'm 21. I'm based in Providence, Rhode Island, on the East
+                Coast. I am a devotee of JavaScript and React.{' '}
+              </span>{' '}
+              I enjoy programming and designing. I'm interested in various
+              subjects and things -- mathematics, history, photography,
+              calisthenics, Studio Ghibli, Brunelleschi, bildungsromans...
               <br />
               <br />
               I consider myself to be an architect and a team-player: in order
