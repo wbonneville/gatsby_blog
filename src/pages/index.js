@@ -59,6 +59,7 @@ const IndexPage = () => {
               Welcome to my website! I created this site to function as a
               homebase. Here, you can find my blog, resume, and links to my
               GitHub and Twitter.
+              <span></span>
               <br></br>
               <br></br>
               <span className="important">
