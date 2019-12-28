@@ -25,6 +25,8 @@ const Anchor = styled.a`
   text-decoration: underline;
 `;
 
+// using bulma for columns
+
 const ProjectsPage = () => (
   <React.Fragment>
     <Layout>
