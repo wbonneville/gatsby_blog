@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import alberti from '../images/alberti.png';
+
+// react icons
 import {
   FaGithubAlt,
   FaTwitter,
