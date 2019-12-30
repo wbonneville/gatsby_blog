@@ -35,6 +35,14 @@ const Body = styled.div`
     color: #444444;
     font-size: 34px;
   }
+  @media (min-width: 150px) and (max-width: 350px) {
+    h1 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
 `;
 
 const Test = styled.div``;
@@ -45,11 +53,11 @@ const IndexPage = () => {
       <SEO title="Wesley's Blog " />
 
       <div>
-        <Div className="columns is-tablet">
+        <Div className="columns">
           <Test className="column is-5">
             <Menu />
           </Test>
-          <Body className="column is-12">
+          <Body className="column is-12 ">
             <h1>
               Hello, I'm <span className="name">Wesley Bonneville.</span> I'm a
               front-end developer. <br></br>
