@@ -11,7 +11,7 @@ import styled from 'styled-components';
 const Div = styled.div`
   position: relative;
   top: 150px;
-  left: 6%;
+  left: 6.2%;
   width: 60%;
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
