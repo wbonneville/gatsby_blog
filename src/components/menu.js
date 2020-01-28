@@ -66,9 +66,9 @@ const StyledUl = styled.ul`
 `;
 
 const StyledLink = styled(Link)`
-  color: black !important;
+  color: black;
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-decoration: none;
