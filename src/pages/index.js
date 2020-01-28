@@ -60,7 +60,7 @@ const IndexPage = () => {
           <Body className="column is-12 ">
             <h1>
               Hello, I'm <span className="name">Wesley Bonneville.</span> I'm a
-              front-end developer. <br></br>
+              front-end React developer. <br></br>
             </h1>
             <p>
               <br />
@@ -70,23 +70,27 @@ const IndexPage = () => {
               <span></span>
               <br></br>
               <br></br>
-              <span className="important">
+              <strong>
                 I'm 21. I'm based in Providence, Rhode Island, on the East
                 Coast. I am a devotee of JavaScript and React.{' '}
-              </span>{' '}
+              </strong>{' '}
               I enjoy programming and designing. I'm interested in various
               subjects and things -- mathematics, history, photography,
               calisthenics, Studio Ghibli, Brunelleschi, bildungsromans...
               <br />
               <br />
-              I consider myself to be an architect and a team-player: in order
-              to build something that will stand out, individuals have to work
-              in tandem. Cathedrals and castles don't rise of their own accord
-              -- individuals join forces and work together. I believe in
-              communicating clearly and transparently to ensure that a project's
-              construction is stream-lined, time-efficient, and pleasant.
-              <br /> <br /> Inclined to asking questions. Invested in my journey
-              of learning. Not a fan of shortcuts or easy-fix methods.
+              <strong>I consider myself to be an architect. </strong>Why is this
+              worth mentioning? I feel a great deal of pride when I build things
+              with code. It is no different than brick-laying. One correctly
+              shaped brick after then next is placed down and a cathederal
+              emerges.
+              <br />
+              <br />
+              Inclined to asking questions. Not a fan of shortcuts or easy-fix
+              methods.
+              <br />
+              <br />
+              Passionate. Excited. Healthy.
             </p>
           </Body>
         </Div>
