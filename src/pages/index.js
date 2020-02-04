@@ -24,6 +24,10 @@ const Div = styled.div`
   }
   & .name {
     color: #366bd3;
+    font-weight: 500;
+  }
+  & .titlen {
+    font-weight: 500;
   }
   & .important {
     font-weight: 500;
@@ -34,6 +38,7 @@ const Body = styled.div`
   & h1 {
     color: #444444;
     font-size: 34px;
+    font-weight: 600;
   }
   @media (min-width: 150px) and (max-width: 350px) {
     h1 {
@@ -59,8 +64,9 @@ const IndexPage = () => {
           </Test>
           <Body className="column is-12 ">
             <h1>
-              Hello, I'm <span className="name">Wesley Bonneville.</span> I'm a
-              front-end React developer. <br></br>
+              Hello, I'm <span className="name">Wesley.</span> I'm a
+              <span className="titlen"> Front-End React Developer.</span>{' '}
+              <br></br>
             </h1>
             <p>
               <br />
