@@ -82,7 +82,7 @@ const IndexPage = () => {
               <strong>I consider myself to be an architect. </strong>Why is this
               worth mentioning? I feel a great deal of pride when I build things
               with code. It is no different than brick-laying. One correctly
-              shaped brick after then next is placed down and a cathederal
+              shaped brick after the next is placed down and a cathederal
               emerges.
               <br />
               <br />
