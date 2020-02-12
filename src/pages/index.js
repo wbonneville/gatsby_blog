@@ -17,7 +17,6 @@ const Div = styled.div`
   & p {
     text-align: left;
     font-size: 20px;
-    font-weight: 300;
   }
 
   & .important {
@@ -63,9 +62,12 @@ const IndexPage = () => {
 
             <p>
               <br />
-              Welcome to my website! I created this site to function as a
-              homebase. Here, you can find my blog, resume, and links to my
-              GitHub and Twitter.
+              Welcome to my website!{' '}
+              <span role="img" aria-label="sheep">
+                💻
+              </span>{' '}
+              I created this site to function as a homebase. Here, you can find
+              my blog, resume, and links to my GitHub and Twitter.
               <span></span>
               <br></br>
               <br></br>
