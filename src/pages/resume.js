@@ -25,7 +25,7 @@ const Anchor = styled.a`
 `;
 
 const ResumeWrapper = styled.div`
-  margin-left: 3%;
+  margin-left: -4%;
   margin-top: -72px;
 `;
 

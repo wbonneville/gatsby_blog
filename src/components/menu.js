@@ -118,7 +118,7 @@ const Menu = () => (
               </StyledLink>
             </li>
           </StyledUl>
-          <hr className="hr" />
+          {/* <hr className="hr" /> */}
 
           <div className="circle">
             <StyledUl>
