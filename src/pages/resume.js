@@ -26,13 +26,14 @@ const Anchor = styled.a`
 
 const ResumeWrapper = styled.div`
   margin-left: 3%;
+  margin-top: -72px;
 `;
 
 export default class Resume extends Component {
   render() {
     return (
       <Layout>
-        <Div className="columns is-desktop">
+        <Div className="columns is-tablet">
           <div className="column is-5">
             <Menu />
           </div>

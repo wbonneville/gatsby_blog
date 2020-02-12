@@ -10,9 +10,13 @@ import {
   FaTwitter,
   Fa500Px,
   FaStackOverflow,
+  FaLinkedinIn,
 } from 'react-icons/fa';
 
 const StyledDiv = styled.div`
+  & .hr {
+    width: 50%;
+  }
   & .nav {
     width: 2.5rem;
     height: 2.5rem;
@@ -58,20 +62,16 @@ const StyledUl = styled.ul`
   padding: 0;
   margin: 0;
   margin-bottom: 1.2rem;
+  font-size: 18px;
   & .socials {
-    padding-top: 1px;
+    padding-top: 3px;
   }
-
   & .icon {
   }
 `;
 
 const StyledLink = styled(Link)`
-  color: #444444;
   font-size: 26px;
-  font-weight: 350;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-decoration: none;
 
   & span {
@@ -118,6 +118,7 @@ const Menu = () => (
               </StyledLink>
             </li>
           </StyledUl>
+          <hr className="hr" />
 
           <div className="circle">
             <StyledUl>
@@ -131,17 +132,25 @@ const Menu = () => (
                   <FaTwitter />
                 </a>
               </li>
-              <li className="socials">
+              {/* <li className="socials">
                 <a className="icon" href="https://500px.com/wesbonneville">
                   <Fa500Px />
                 </a>
-              </li>
+              </li> */}
               <li className="socials">
                 <a
                   className="icon"
                   href="https://stackoverflow.com/users/10571874/wesley-bonneville"
                 >
                   <FaStackOverflow />
+                </a>
+              </li>
+              <li className="socials">
+                <a
+                  className="icon"
+                  href="https://www.linkedin.com/in/wesley-bonneville/"
+                >
+                  <FaLinkedinIn />
                 </a>
               </li>
             </StyledUl>

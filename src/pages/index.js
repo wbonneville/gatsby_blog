@@ -19,13 +19,7 @@ const Div = styled.div`
     font-size: 20px;
     font-weight: 300;
   }
-  & .name {
-    color: #366bd3;
-    font-weight: 500;
-  }
-  & .titlen {
-    font-weight: 500;
-  }
+
   & .important {
     font-weight: 500;
   }
@@ -35,7 +29,10 @@ const Body = styled.div`
   & h1 {
     color: #444444;
     font-size: 34px;
-    font-weight: 600;
+    font-weight: 700;
+  }
+  & .name {
+    color: #366bd3;
   }
   @media (min-width: 150px) and (max-width: 350px) {
     h1 {
@@ -58,12 +55,12 @@ const IndexPage = () => {
           <Test className="column is-5">
             <Menu />
           </Test>
-          <Body className="column is-12 ">
+          <Body className="column is-11">
             <h1>
-              Hello, I'm <span className="name">Wesley.</span> I'm a
-              <span className="titlen"> Front-End React Developer.</span>{' '}
-              <br></br>
+              Hello, I'm <span className="name">Wesley.</span> I'm a Front-End
+              React Developer.{' '}
             </h1>
+
             <p>
               <br />
               Welcome to my website! I created this site to function as a
@@ -72,27 +69,14 @@ const IndexPage = () => {
               <span></span>
               <br></br>
               <br></br>
-              <strong>
-                I'm 21. I'm based in Providence, Rhode Island, on the East
-                Coast. I am a devotee of JavaScript and React.{' '}
-              </strong>{' '}
-              I enjoy programming and designing. I'm interested in various
-              subjects and things -- mathematics, history, photography,
-              calisthenics, Studio Ghibli, Brunelleschi, bildungsromans...
-              <br />
-              <br />
-              <strong>I consider myself to be an architect. </strong>Why is this
-              worth mentioning? I feel a great deal of pride when I build things
-              with code. It is no different than brick-laying. One correctly
-              shaped brick after the next is placed down and a cathederal
-              emerges.
+              I'm 21. I live in Providence, Rhode Island, on the East Coast. I
+              enjoy programming and designing. I'm interested in various fields
+              and disciplines: mathematics, history, photography, calisthenics,
+              Studio Ghibli, Brunelleschi, bildungsromans, anything analog...
               <br />
               <br />
               Inclined to asking questions. Not a fan of shortcuts or easy-fix
               methods.
-              <br />
-              <br />
-              Passionate. Excited. Healthy.
             </p>
           </Body>
         </Div>
