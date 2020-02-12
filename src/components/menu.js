@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import alberti from '../images/alberti.png';
+import Layout from '../components/layout';
 
 // react icons
 import {
@@ -89,58 +90,65 @@ const StyledLink = styled(Link)`
 
 const Menu = () => (
   <React.Fragment>
-    <StyledDiv>
-      <div>
-        {/* <div className="nav"></div>
+    <Layout>
+      <StyledDiv>
+        <div>
+          {/* <div className="nav"></div>
         <div className="nav2"></div> */}
-        <div className="pic"></div>
-        <StyledUl>
-          <li>
-            <StyledLink to="/">
-              <span>wesley</span>
-            </StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/projects">
-              <span>projects</span>
-            </StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/blog">
-              <span>blog</span>
-            </StyledLink>
-          </li>
-        </StyledUl>
-
-        <div className="circle">
+          <div className="pic"></div>
           <StyledUl>
-            <li className="socials">
-              <a className="icon" href="https://github.com/wbonneville">
-                <FaGithubAlt />
-              </a>
+            <li>
+              <StyledLink to="/">
+                <span>wesley</span>
+              </StyledLink>
             </li>
-            <li className="socials">
-              <a className="icon" href="https://twitter.com/wesbonneville">
-                <FaTwitter />
-              </a>
+            <li>
+              <StyledLink to="/projects">
+                <span>projects</span>
+              </StyledLink>
             </li>
-            <li className="socials">
-              <a className="icon" href="https://500px.com/wesbonneville">
-                <Fa500Px />
-              </a>
+            <li>
+              <StyledLink to="/blog">
+                <span>blog</span>
+              </StyledLink>
             </li>
-            <li className="socials">
-              <a
-                className="icon"
-                href="https://stackoverflow.com/users/10571874/wesley-bonneville"
-              >
-                <FaStackOverflow />
-              </a>
+            <li>
+              <StyledLink to="/resume">
+                <span>resume</span>
+              </StyledLink>
             </li>
           </StyledUl>
+
+          <div className="circle">
+            <StyledUl>
+              <li className="socials">
+                <a className="icon" href="https://github.com/wbonneville">
+                  <FaGithubAlt />
+                </a>
+              </li>
+              <li className="socials">
+                <a className="icon" href="https://twitter.com/wesbonneville">
+                  <FaTwitter />
+                </a>
+              </li>
+              <li className="socials">
+                <a className="icon" href="https://500px.com/wesbonneville">
+                  <Fa500Px />
+                </a>
+              </li>
+              <li className="socials">
+                <a
+                  className="icon"
+                  href="https://stackoverflow.com/users/10571874/wesley-bonneville"
+                >
+                  <FaStackOverflow />
+                </a>
+              </li>
+            </StyledUl>
+          </div>
         </div>
-      </div>
-    </StyledDiv>
+      </StyledDiv>
+    </Layout>
   </React.Fragment>
 );
 

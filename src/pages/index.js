@@ -1,9 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import '../mystyles.scss';
-
 import Layout from '../components/layout';
-// import Image from '../components/image';
 import SEO from '../components/seo';
 import Menu from '../components/menu';
 import styled from 'styled-components';
@@ -56,7 +53,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Wesley's Blog " />
-
       <div>
         <Div className="columns">
           <Test className="column is-5">

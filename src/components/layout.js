@@ -17,12 +17,13 @@ const Layout = ({ children }) => {
     }
   `);
 
-  const StyledDiv = styled.div``;
+  const StyledDiv = styled.div`
+    /* background-color: #f6f6f6 !important; */
+  `;
 
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-
       <StyledDiv>
         {/* <Menu /> */}
         <main>{children} </main>
