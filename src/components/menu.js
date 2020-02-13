@@ -73,9 +73,10 @@ const StyledUl = styled.ul`
 const StyledLink = styled(Link)`
   font-size: 26px;
   text-decoration: none;
+  font-weight: 200;
 
   & span {
-    background: linear-gradient(to bottom, #bdd5e4 0%, #bdd5e4 100%);
+    background: linear-gradient(to bottom, #444444 0%, #444444 100%);
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 1px 1px;
@@ -85,6 +86,7 @@ const StyledLink = styled(Link)`
 
   & span:hover {
     background-size: 4px 50px;
+    color: white;
   }
 `;
 

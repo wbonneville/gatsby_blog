@@ -77,8 +77,8 @@ const IndexPage = () => {
               Studio Ghibli, Brunelleschi, bildungsromans, anything analog...
               <br />
               <br />
-              Inclined to asking questions. Not a fan of shortcuts or easy-fix
-              methods.
+              HTML5, CSS3, Flexboxgrid, StyledComponents, ES6, React, Redux
+              (TypeScript soon) 🖤
             </p>
           </Body>
         </Div>
