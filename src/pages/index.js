@@ -62,23 +62,17 @@ const IndexPage = () => {
 
             <p>
               <br />
-              Welcome to my website!{' '}
-              <span role="img" aria-label="sheep">
-                💻
-              </span>{' '}
-              I created this site to function as a homebase. Here, you can find
-              my blog, resume, and links to my GitHub and Twitter.
+              Welcome to my website! I created this site to function as a
+              homebase. Here, you can find my blog, resume, and links to my
+              GitHub and Twitter.
               <span></span>
               <br></br>
               <br></br>
-              I'm 21. I live in Providence, Rhode Island, on the East Coast. I
-              enjoy programming and designing. I'm interested in various fields
-              and disciplines: mathematics, history, photography, calisthenics,
-              Studio Ghibli, Brunelleschi, bildungsromans, anything analog...
+              Based in Providence, Rhode Island.
               <br />
               <br />
-              HTML5, CSS3, Flexboxgrid, StyledComponents, ES6, React, Redux
-              (TypeScript soon) 🖤
+              HTML5, CSS3, Flexboxgrid, StyledComponents, ES6, Node.js, React,
+              Redux (TypeScript soon)
             </p>
           </Body>
         </Div>
