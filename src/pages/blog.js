@@ -9,9 +9,6 @@ import Menu from '../components/menu';
 const Div = styled.div`
   position: relative;
   top: 150px;
-  left: 6%;
-  width: 60%;
-
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   & h3 {
@@ -25,13 +22,22 @@ const Div = styled.div`
   }
 `;
 
+const Body = styled.div`
+  margin-left: 6%;
+`;
+
+const MenuWrapper = styled.div`
+  margin-left: 6%;
+  margin-right: -6%;
+`;
+
 const BlogPage = ({ data }) => (
   <Layout>
-    <Div className="columns is-desktop">
-      <div className="column is-5">
+    <Div className="columns is-tablet">
+      <MenuWrapper className="column is-one-quarter">
         <Menu />
-      </div>
-      <div className="column is-12">
+      </MenuWrapper>
+      <Body className="column is-7 is-10-mobile">
         {data.allMarkdownRemark.edges.map(post => (
           <div key={post.node.id}>
             <h3>
@@ -47,7 +53,7 @@ const BlogPage = ({ data }) => (
             </p>
           </div>
         ))}
-      </div>
+      </Body>
     </Div>
   </Layout>
 );
