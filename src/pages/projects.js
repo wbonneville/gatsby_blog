@@ -127,7 +127,7 @@ const ProjectsPage = () => (
             className="spacewalker"
             href="https://spacewalkerproject.netlify.com/"
           >
-            Space Walker: a WIP space trading game built with React and Redux.
+            🛰 Space Walker: a WIP space trading game built with React and Redux.
             click on a planet!
           </a>
           <br />
@@ -169,10 +169,12 @@ const ProjectsPage = () => (
           <div className="pic7"></div>
           <br />
           <a className="gallerypx" href="https://gallerypx.netlify.com/">
-            GalleryPx: a responsive gallery built with React that dynamically
+            📸 GalleryPx: a responsive gallery built with React that dynamically
             renders renders photos using data from a JSON file, or
             alternatively, any API
           </a>
+          <br />
+          <br />
           <Anchor href="https://github.com/wbonneville/gallery">
             link to repo
           </Anchor>
