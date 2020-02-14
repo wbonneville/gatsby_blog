@@ -5,6 +5,22 @@ import Header from './header';
 import Menu from './menu';
 import styled from 'styled-components';
 import './layout.css';
+import dome from '../images/bruneschelli.jpeg';
+import alberti1 from '../images/alberti.jpeg';
+import alberti2 from '../images/alberti2.jpeg';
+import alberti3 from '../images/alberti3.png';
+
+const Image = styled.div`
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+    url(${dome});
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: 20% 15%; */
+  margin-top: 20%;
+  /* opacity: 0.8; */
+  box-shadow: 20px 20px 20px;
+`;
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,16 +34,19 @@ const Layout = ({ children }) => {
   `);
 
   const StyledDiv = styled.div`
-    /* background-color: #f6f6f6 !important; */
+    overflow-y: hidden;
   `;
 
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <StyledDiv>
-        {/* <Menu /> */}
-
-        <main> {children} </main>
+        {' '}
+        {children}{' '}
+        <div className="columns">
+          <div className="column is-12">
+            <Image />
+          </div>
+        </div>
       </StyledDiv>
     </>
   );

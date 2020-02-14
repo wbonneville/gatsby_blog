@@ -37,7 +37,7 @@ const Div = styled.div`
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   & p {
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
   }
 

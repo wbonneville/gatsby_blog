@@ -92,74 +92,72 @@ const StyledLink = styled(Link)`
 
 const Menu = () => (
   <React.Fragment>
-    <Layout>
-      <StyledDiv>
-        <div>
-          {/* <div className="nav"></div>
+    <StyledDiv>
+      <div>
+        {/* <div className="nav"></div>
         <div className="nav2"></div> */}
-          <div className="pic"></div>
-          <StyledUl>
-            <li>
-              <StyledLink to="/">
-                <span>wesley</span>
-              </StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/projects">
-                <span>projects</span>
-              </StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/blog">
-                <span>blog</span>
-              </StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/resume">
-                <span>resume</span>
-              </StyledLink>
-            </li>
-          </StyledUl>
-          {/* <hr className="hr" /> */}
+        <div className="pic"></div>
+        <StyledUl>
+          <li>
+            <StyledLink to="/">
+              <span>wesley</span>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/projects">
+              <span>projects</span>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/blog">
+              <span>blog</span>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/resume">
+              <span>resume</span>
+            </StyledLink>
+          </li>
+        </StyledUl>
+        {/* <hr className="hr" /> */}
 
-          <div className="circle">
-            <StyledUl>
-              <li className="socials">
-                <a className="icon" href="https://github.com/wbonneville">
-                  <FaGithubAlt />
-                </a>
-              </li>
-              <li className="socials">
-                <a className="icon" href="https://twitter.com/wesbonneville">
-                  <FaTwitter />
-                </a>
-              </li>
-              {/* <li className="socials">
+        <div className="circle">
+          <StyledUl>
+            <li className="socials">
+              <a className="icon" href="https://github.com/wbonneville">
+                <FaGithubAlt />
+              </a>
+            </li>
+            <li className="socials">
+              <a className="icon" href="https://twitter.com/wesbonneville">
+                <FaTwitter />
+              </a>
+            </li>
+            {/* <li className="socials">
                 <a className="icon" href="https://500px.com/wesbonneville">
                   <Fa500Px />
                 </a>
               </li> */}
-              <li className="socials">
-                <a
-                  className="icon"
-                  href="https://stackoverflow.com/users/10571874/wesley-bonneville"
-                >
-                  <FaStackOverflow />
-                </a>
-              </li>
-              <li className="socials">
-                <a
-                  className="icon"
-                  href="https://www.linkedin.com/in/wesley-bonneville/"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-            </StyledUl>
-          </div>
+            <li className="socials">
+              <a
+                className="icon"
+                href="https://stackoverflow.com/users/10571874/wesley-bonneville"
+              >
+                <FaStackOverflow />
+              </a>
+            </li>
+            <li className="socials">
+              <a
+                className="icon"
+                href="https://www.linkedin.com/in/wesley-bonneville/"
+              >
+                <FaLinkedinIn />
+              </a>
+            </li>
+          </StyledUl>
         </div>
-      </StyledDiv>
-    </Layout>
+      </div>
+    </StyledDiv>
   </React.Fragment>
 );
 
