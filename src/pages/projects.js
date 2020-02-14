@@ -201,6 +201,19 @@ const ProjectsPage = () => (
           <Anchor href="https://github.com/wbonneville/react-projects">
             link to repo
           </Anchor>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            ratione recusandae eius magni, hic voluptatem nam, ex rem quae nobis
+            assumenda tempore voluptatibus optio quas. Dolor nesciunt magni
+            error minus? Ipsum, quo optio qui deserunt veniam ab molestiae quod
+            doloribus dolorum saepe accusamus eum neque fuga corrupti voluptas
+            labore excepturi nihil repellendus consectetur ipsa fugit quas
+            officiis culpa. Ab, totam nam laborum, itaque esse et distinctio,
+            obcaecati at cupiditate delectus ipsa? Ad molestias laborum deserunt
+            minima ratione architecto repudiandae obcaecati neque atque, id
+            vitae ducimus, expedita corrupti eveniet sequi eos ea quisquam
+            mollitia, deleniti molestiae esse impedit nobis. Officiis, maiores.
+          </p>
         </Body>
       </Div>
     </Layout>

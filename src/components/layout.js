@@ -16,7 +16,6 @@ const Image = styled.div`
     url(${dome});
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 20%;
 `;
 
 const Layout = ({ children }) => {
@@ -32,14 +31,21 @@ const Layout = ({ children }) => {
 
   const StyledDiv = styled.div`
     overflow-y: hidden;
+    & .image {
+      margin-top: 10%;
+    }
+  `;
+
+  const Space = styled.div`
+    height: 100px;
   `;
 
   return (
     <>
       <StyledDiv>
-        {' '}
-        {children}{' '}
-        <div className="columns">
+        {children}
+        <Space></Space>
+        <div className="columns is-mobile image">
           <div className="column is-12">
             <Image />
           </div>
