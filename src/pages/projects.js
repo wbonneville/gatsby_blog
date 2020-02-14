@@ -20,7 +20,14 @@ const Div = styled.div`
   & .spacewalker {
     font-size: 20px;
     text-decoration: underline;
+    & :hover {
+      color: blueviolet;
+    }
+  }
 
+  & .gallerypx {
+    font-size: 20px;
+    text-decoration: underline;
     & :hover {
       color: blueviolet;
     }
@@ -125,9 +132,10 @@ const ProjectsPage = () => (
           </a>
           <br />
           <br />
-          <Anchor href="https://github.com/wbonneville/gallery">
+          <Anchor href="https://github.com/wbonneville/spacewalker">
             link to repo
           </Anchor>
+
           <div className="pic1"></div>
           <p>There are hundreds of randomly generated planets...</p>
           <div className="pic2"></div>
@@ -160,16 +168,14 @@ const ProjectsPage = () => (
           <p>Redux doing its job.</p>
           <div className="pic7"></div>
           <br />
-          <Anchor href="https://github.com/wbonneville/spacewalker">
+          <a className="gallerypx" href="https://gallerypx.netlify.com/">
+            GalleryPx: a responsive gallery built with React that dynamically
+            renders renders photos using data from a JSON file, or
+            alternatively, any API
+          </a>
+          <Anchor href="https://github.com/wbonneville/gallery">
             link to repo
           </Anchor>
-          <br />
-          <br />
-          <a href="https://gallerypx.netlify.com/">
-            a responsive gallery built with React that dynamically renders
-            renders photos using data from a JSON file, or alternatively, any
-            API
-          </a>
           <br />
 
           <br />
