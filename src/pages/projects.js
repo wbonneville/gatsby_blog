@@ -16,8 +16,6 @@ import spacewalker7 from '../images/spacewalker7.png';
 const Div = styled.div`
   position: relative;
   top: 150px;
-  left: 6%;
-  width: 60%;
 
   & .spacewalker {
     font-size: 20px;
@@ -100,14 +98,23 @@ const Anchor = styled.a`
 
 // using bulma for columns
 
+const Body = styled.div`
+  margin-left: 6%;
+`;
+
+const MenuWrapper = styled.div`
+  margin-left: 6%;
+  margin-right: -6%;
+`;
+
 const ProjectsPage = () => (
   <React.Fragment>
     <Layout>
-      <Div className="columns is-mobile">
-        <div className="column is-5">
+      <Div className="columns is-tablet">
+        <MenuWrapper className="column is-one-quarter">
           <Menu />
-        </div>
-        <div className="column is-12">
+        </MenuWrapper>
+        <Body className="column is-7 is-10-mobile">
           <p>Here are a few of my original projects. </p>
           <a
             className="spacewalker"
@@ -186,7 +193,7 @@ const ProjectsPage = () => (
           <Anchor href="https://github.com/wbonneville/react-projects">
             link to repo
           </Anchor>
-        </div>
+        </Body>
       </Div>
     </Layout>
   </React.Fragment>

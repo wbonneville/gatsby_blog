@@ -8,12 +8,8 @@ import styled from 'styled-components';
 const Div = styled.div`
   position: relative;
   top: 150px;
-  /* left: 6.2%;
-  width: 60%; */
-
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
   & p {
     text-align: left;
     font-size: 20px;
@@ -45,7 +41,7 @@ const Body = styled.div`
   }
 `;
 
-const Test = styled.div`
+const MenuWrapper = styled.div`
   margin-left: 6%;
   margin-right: -6%;
 `;
@@ -56,9 +52,9 @@ const IndexPage = () => {
       <SEO title="Wesley's Blog " />
       <div>
         <Div className="columns is-tablet">
-          <Test className="column is-one-quarter ">
+          <MenuWrapper className="column is-one-quarter ">
             <Menu />
-          </Test>
+          </MenuWrapper>
           <Body className="column is-7 is-10-mobile">
             <h1>
               Hello, I'm <span className="name">Wesley.</span> I'm a Front-End
