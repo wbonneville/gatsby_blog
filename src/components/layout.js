@@ -12,14 +12,11 @@ import alberti3 from '../images/alberti3.png';
 
 const Image = styled.div`
   height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
     url(${dome});
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: 20% 15%; */
   margin-top: 20%;
-  /* opacity: 0.8; */
-  box-shadow: 20px 20px 20px;
 `;
 
 const Layout = ({ children }) => {
