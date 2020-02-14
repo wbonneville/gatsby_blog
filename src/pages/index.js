@@ -26,10 +26,12 @@ const Body = styled.div`
   & h1 {
     color: #444444;
     font-size: 34px;
-    font-weight: 700;
+    font-weight: 200;
   }
-  & .name {
-    color: #366bd3;
+
+  & .intro {
+    color: dimgray;
+    font-weight: 200;
   }
   @media (min-width: 150px) and (max-width: 350px) {
     h1 {
@@ -57,8 +59,10 @@ const IndexPage = () => {
           </MenuWrapper>
           <Body className="column is-7 is-10-mobile">
             <h1>
-              Hello, I'm <span className="name">Wesley.</span> I'm a Front-End
-              React Developer.{' '}
+              <span className="intro">
+                Hello, I'm <span className="name">Wesley.</span>
+              </span>{' '}
+              I'm a Front-End React Developer.{' '}
             </h1>
 
             <p>

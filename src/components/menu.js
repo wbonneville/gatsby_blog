@@ -76,7 +76,7 @@ const StyledLink = styled(Link)`
   font-weight: 200;
 
   & span {
-    background: linear-gradient(to bottom, #444444 0%, #444444 100%);
+    background: linear-gradient(to bottom, dimgray 0%, dimgray 100%);
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 1px 1px;
