@@ -39,9 +39,8 @@ const Div = styled.div`
   & .pic1 {
     margin-top: 1rem;
     background-image: url(${spacewalkerimg1});
-    height: 340px;
-    /* width: 45%; */
-    background-size: contain;
+    height: 250px;
+    background-size: cover;
     border-radius: 3%;
     margin-bottom: 2rem;
   }
@@ -49,7 +48,6 @@ const Div = styled.div`
     margin-top: 1rem;
     background-image: url(${spacewalker2});
     height: 250px;
-    /* width: 45%; */
     background-size: cover;
     border-radius: 3%;
     margin-bottom: 2rem;
@@ -58,44 +56,39 @@ const Div = styled.div`
     margin-top: 1rem;
     background-image: url(${spacewalker3});
     height: 340px;
-    /* width: 45%; */
-    background-size: contain;
+    background-size: cover;
     border-radius: 3%;
     margin-bottom: 2rem;
   }
   & .pic4 {
     margin-top: 1rem;
     background-image: url(${spacewalker4});
-    height: 340px;
-    width: 60%;
-    background-size: contain;
+    height: 400px;
+    background-size: cover;
     border-radius: 3%;
     margin-bottom: 2rem;
   }
   & .pic5 {
     margin-top: 1rem;
     background-image: url(${spacewalker5});
-    height: 340px;
-    width: 60%;
-    background-size: contain;
+    height: 400px;
+    background-size: cover;
     border-radius: 3%;
     margin-bottom: 2rem;
   }
   & .pic6 {
     margin-top: 1rem;
     background-image: url(${spacewalker6});
-    height: 340px;
-    width: 60%;
-    background-size: contain;
+    height: 520px;
+    background-size: cover;
     border-radius: 3%;
     margin-bottom: 2rem;
   }
   & .pic7 {
     margin-top: 1rem;
     background-image: url(${spacewalker7});
-    height: 340px;
-    width: 60%;
-    background-size: contain;
+    height: 500px;
+    background-size: cover;
     border-radius: 3%;
     margin-bottom: 2rem;
   }
@@ -110,7 +103,7 @@ const Anchor = styled.a`
 const ProjectsPage = () => (
   <React.Fragment>
     <Layout>
-      <Div className="columns is-desktop">
+      <Div className="columns is-mobile">
         <div className="column is-5">
           <Menu />
         </div>
@@ -123,17 +116,41 @@ const ProjectsPage = () => (
             Space Walker: a WIP space trading game built with React and Redux.
             click on a planet!
           </a>
+          <br />
+          <br />
+          <Anchor href="https://github.com/wbonneville/gallery">
+            link to repo
+          </Anchor>
           <div className="pic1"></div>
-          <p>There a couple hundred randomly generated planets...</p>
+          <p>There are hundreds of randomly generated planets...</p>
           <div className="pic2"></div>
           <p>
             You can click on any planet and warp to it. Each planet is entirely
-            different. There's a huge amount of things to be added.
+            different. There's a lot of different information concerning planet.
+            All of the state is stored within the Redux store. There's a huge
+            amount of things to be added.
+            <br />
+            <br />
+            The console I made for it looks pretty cool, too. I designed it in
+            Sketch with my free trial.
           </p>
           <div className="pic3"></div>
+          <p>
+            The JSX is a sight for sore eyes, but there was a lot of information
+            to render. Here, current market data (the market of the planet the
+            player is on) is being mapped through and enumerated. I'm using
+            Flexboxgrid to render the rows of data... this could be done a lot
+            nicer.
+          </p>
           <div className="pic4"></div>
+          <p>
+            Generating planets using a loop. Let's make 800! It's really cool.
+            Each planet is randomly generated and comes with its own attributes.
+          </p>
           <div className="pic5"></div>
+          <p> Planet data.</p>
           <div className="pic6"></div>
+          <p>Redux doing its job.</p>
           <div className="pic7"></div>
           <br />
           <Anchor href="https://github.com/wbonneville/spacewalker">
@@ -147,9 +164,7 @@ const ProjectsPage = () => (
             API
           </a>
           <br />
-          <Anchor href="https://github.com/wbonneville/gallery">
-            link to repo
-          </Anchor>
+
           <br />
           <br />
           <a href="http://halflifeintelligence.site/">

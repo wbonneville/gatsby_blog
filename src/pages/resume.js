@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import Menu from '../components/menu';
 import '../mystyles.scss';
 import { Document, Page } from 'react-pdf';
-import PDF from './resume.pdf';
+import PDF from './resumeupdated.pdf';
 
 const Div = styled.div`
   position: relative;
