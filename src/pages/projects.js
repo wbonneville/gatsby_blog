@@ -218,9 +218,9 @@ const ProjectsPage = () => (
           <div className="pic2"></div>
           <p>
             You can click on any planet and warp to it. Each planet is entirely
-            different. There's a lot of different information concerning planet.
-            All of the state is stored within the Redux store. There's a huge
-            amount of things to be added.
+            different. There's a lot of different information concerning each
+            planet. All of the state is stored within the Redux store. There's a
+            huge amount of things to be added.
             <br />
             <br />
             The console I made for it looks pretty cool, too. I designed it in
@@ -251,8 +251,8 @@ const ProjectsPage = () => (
           <br />
           <a className="gallerypx anchor" href="https://gallerypx.netlify.com/">
             📸 GalleryPx: a responsive gallery built with React that dynamically
-            renders renders photos using data from a JSON file, or
-            alternatively, any API
+            renders photos using data from a JSON file, or alternatively, any
+            API
           </a>
           <br />
           <br />
