@@ -9,8 +9,7 @@ import PDF from './resumeupdated.pdf';
 const Div = styled.div`
   position: relative;
   top: 150px;
-  left: 6%;
-  width: 60%;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   & p {
@@ -25,8 +24,16 @@ const Anchor = styled.a`
 `;
 
 const ResumeWrapper = styled.div`
-  margin-left: -4%;
-  margin-top: -72px;
+  margin-left: 6%;
+
+  & .resume {
+    margin-left: -9%;
+  }
+`;
+
+const MenuWrapper = styled.div`
+  margin-left: 6%;
+  margin-right: -6%;
 `;
 
 export default class Resume extends Component {
@@ -34,11 +41,16 @@ export default class Resume extends Component {
     return (
       <Layout>
         <Div className="columns is-tablet">
-          <div className="column is-5">
+          <MenuWrapper className="column is-one-quarter">
             <Menu />
-          </div>
-          <ResumeWrapper className="column is-12">
-            <Document file={PDF} onLoadSuccess={this.onDocumentLoadSuccess}>
+          </MenuWrapper>
+          <ResumeWrapper className="column is-7 is-10-mobile">
+            <h1>Resume</h1>
+            <Document
+              className="resume"
+              file={PDF}
+              onLoadSuccess={this.onDocumentLoadSuccess}
+            >
               <Page pageNumber={1} />
             </Document>
           </ResumeWrapper>

@@ -38,6 +38,8 @@ const BlogPage = ({ data }) => (
         <Menu />
       </MenuWrapper>
       <Body className="column is-7 is-10-mobile">
+        <h1>Blog</h1>
+        <br />
         {data.allMarkdownRemark.edges.map(post => (
           <div key={post.node.id}>
             <h3>

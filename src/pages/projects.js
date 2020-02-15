@@ -179,6 +179,11 @@ const Anchor = styled.a`
 
 const Body = styled.div`
   margin-left: 6%;
+
+  & .anchor {
+    font-size: 22px;
+    font-weight: 600;
+  }
 `;
 
 const MenuWrapper = styled.div`
@@ -194,9 +199,10 @@ const ProjectsPage = () => (
           <Menu />
         </MenuWrapper>
         <Body className="column is-7 is-10-mobile">
-          <p>Here are a few of my original projects. </p>
+          <h1>Projects</h1>
+          <br />
           <a
-            className="spacewalker"
+            className="spacewalker anchor"
             href="https://spacewalkerproject.netlify.com/"
           >
             🛰 Space Walker: a WIP space trading game built with React and Redux.
@@ -243,7 +249,7 @@ const ProjectsPage = () => (
             still a work in progress.
           </p>
           <br />
-          <a className="gallerypx" href="https://gallerypx.netlify.com/">
+          <a className="gallerypx anchor" href="https://gallerypx.netlify.com/">
             📸 GalleryPx: a responsive gallery built with React that dynamically
             renders renders photos using data from a JSON file, or
             alternatively, any API
@@ -258,18 +264,23 @@ const ProjectsPage = () => (
           <div className="gallerypic1"></div>
           <p>I modeled it after 500px.</p>
           <div className="gallerypic2"></div>
-          The photos are organized neatly into 3 different rows. The user can
-          choose which row they'd like to put the photo in -- within the JSON
-          data!
+
+          <p>
+            The photos are organized neatly into 3 different rows. The user can
+            choose which row they'd like to put the photo in -- within the JSON
+            data!
+          </p>
           <div className="gallerypic3"></div>
           <p>You can like photos...</p>
           <div className="gallerypic4"></div>
-          And you can open them up if you'd like to view them bigger.
-          <div className="gallerypic5"></div>I made use of Flexboxgrid to
-          organize the data (the photos) into three different rows. Each array
-          is mapped through.
+          <p>And you can open them up if you'd like to view them bigger.</p>
+          <div className="gallerypic5"></div>
+          <p>
+            I made use of Flexboxgrid to organize the data (the photos) into
+            three different rows. Each array is mapped through.
+          </p>
           <div className="gallerypic6"></div>
-          The first set of data.
+          <p>The first set of data.</p>
           <div className="gallerypic7"></div>
           <p>
             Conditional rendering for Modal and like bar. I love JSX. It's
@@ -277,7 +288,7 @@ const ProjectsPage = () => (
           </p>
           <div className="gallerypic8"></div>
           <br />
-          <a href="http://halflifeintelligence.site/">
+          <a className="anchor" href="http://halflifeintelligence.site/">
             a fun spoof website with several full pages. project built to
             demonstrate understanding of CSS, Styled Components, and
             Flexboxgrid.
@@ -288,7 +299,10 @@ const ProjectsPage = () => (
           </Anchor>
           <br />
           <br />
-          <a href="https://github.com/wbonneville/react-projects">
+          <a
+            className="anchor"
+            href="https://github.com/wbonneville/react-projects"
+          >
             all other small projects and thoroughly commented code-alongs. lots
             of code.
           </a>

@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
   `);
 
   const StyledDiv = styled.div`
-    overflow-y: hidden;
+    overflow: hidden;
     & .image {
       margin-top: 10%;
     }
