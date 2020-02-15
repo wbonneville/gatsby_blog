@@ -12,6 +12,14 @@ import spacewalker4 from '../images/spacewalker4.png';
 import spacewalker5 from '../images/spacewalker5.png';
 import spacewalker6 from '../images/spacewalker6.png';
 import spacewalker7 from '../images/spacewalker7.png';
+import gallerypx1 from '../images/gallerypx1.png';
+import gallerypx2 from '../images/gallerypx2.png';
+import gallerypx3 from '../images/gallerypx3.png';
+import gallerypx4 from '../images/gallerypx4.png';
+import gallerypx5 from '../images/gallerypx5.png';
+import gallerypx6 from '../images/gallerypx6.png';
+import gallerypx7 from '../images/gallerypx7.png';
+import gallerypx8 from '../images/gallerypx8.png';
 
 const Div = styled.div`
   position: relative;
@@ -97,6 +105,70 @@ const Div = styled.div`
     border-radius: 3%;
     margin-bottom: 2rem;
   }
+  & .gallerypic1 {
+    margin-top: 1rem;
+    background-image: url(${gallerypx1});
+    height: 360px;
+    background-size: cover;
+    border-radius: 3%;
+    margin-bottom: 2rem;
+  }
+  & .gallerypic2 {
+    margin-top: 1rem;
+    background-image: url(${gallerypx2});
+    height: 300px;
+    background-size: cover;
+    border-radius: 3%;
+    margin-bottom: 2rem;
+  }
+  & .gallerypic3 {
+    margin-top: 1rem;
+    background-image: url(${gallerypx3});
+    height: 300px;
+    background-size: cover;
+    border-radius: 3%;
+    margin-bottom: 2rem;
+  }
+  & .gallerypic4 {
+    margin-top: 1rem;
+    background-image: url(${gallerypx4});
+    height: 100px;
+    background-size: cover;
+    border-radius: 3%;
+    margin-bottom: 2rem;
+  }
+  & .gallerypic5 {
+    margin-top: 1rem;
+    background-image: url(${gallerypx5});
+    height: 300px;
+    background-size: cover;
+    border-radius: 3%;
+    margin-bottom: 2rem;
+  }
+  & .gallerypic6 {
+    margin-top: 1rem;
+    background-image: url(${gallerypx6});
+    height: 500px;
+    background-size: cover;
+    border-radius: 3%;
+    margin-bottom: 2rem;
+  }
+  & .gallerypic7 {
+    margin-top: 1rem;
+    background-image: url(${gallerypx7});
+    height: 500px;
+    background-size: cover;
+    border-radius: 3%;
+    margin-bottom: 2rem;
+  }
+  & .gallerypic8 {
+    margin-top: 1rem;
+    background-image: url(${gallerypx8});
+    height: 500px;
+    background-size: cover;
+    border-radius: 3%;
+    margin-bottom: 2rem;
+  }
 `;
 
 const Anchor = styled.a`
@@ -135,7 +207,6 @@ const ProjectsPage = () => (
           <Anchor href="https://github.com/wbonneville/spacewalker">
             link to repo
           </Anchor>
-
           <div className="pic1"></div>
           <p>There are hundreds of randomly generated planets...</p>
           <div className="pic2"></div>
@@ -167,6 +238,10 @@ const ProjectsPage = () => (
           <div className="pic6"></div>
           <p>Redux doing its job.</p>
           <div className="pic7"></div>
+          <p>
+            As of lately, I've been focusing on other projects. Space Walker is
+            still a work in progress.
+          </p>
           <br />
           <a className="gallerypx" href="https://gallerypx.netlify.com/">
             📸 GalleryPx: a responsive gallery built with React that dynamically
@@ -179,8 +254,28 @@ const ProjectsPage = () => (
             link to repo
           </Anchor>
           <br />
-
           <br />
+          <div className="gallerypic1"></div>
+          <p>I modeled it after 500px.</p>
+          <div className="gallerypic2"></div>
+          The photos are organized neatly into 3 different rows. The user can
+          choose which row they'd like to put the photo in -- within the JSON
+          data!
+          <div className="gallerypic3"></div>
+          <p>You can like photos...</p>
+          <div className="gallerypic4"></div>
+          And you can open them up if you'd like to view them bigger.
+          <div className="gallerypic5"></div>I made use of Flexboxgrid to
+          organize the data (the photos) into three different rows. Each array
+          is mapped through.
+          <div className="gallerypic6"></div>
+          The first set of data.
+          <div className="gallerypic7"></div>
+          <p>
+            Conditional rendering for Modal and like bar. I love JSX. It's
+            beautiful.
+          </p>
+          <div className="gallerypic8"></div>
           <br />
           <a href="http://halflifeintelligence.site/">
             a fun spoof website with several full pages. project built to
